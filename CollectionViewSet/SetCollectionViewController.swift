@@ -70,7 +70,7 @@ class SetCollectionViewController: UICollectionViewController, MFMailComposeView
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         switch indexPath.row {
         case 0:
-            let alert = UIAlertController(title: "", message: "", preferredStyle: .alert)
+            let alert = UIAlertController(title: "AlertView", message: "AlertView", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             
             present(alert, animated: true, completion: nil)
