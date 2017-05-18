@@ -19,7 +19,7 @@
 
 ### 第三格
 1. 建立一個變數來儲存步數，接下來在cell裡面拉近一個Label元件並在cellForItemAt的function設定要顯示的內容以及步數。
-2. 接下來在class外面import CoreMotion，接下來呼叫motionEnded的function，最後在裡面用一個判斷式來判斷動作類別，如果有達成上下晃動的動作時，變數就+1並且執行collectionView的reloadData去更新cell裡面所顯示的步數數字。
+2. 接下來在class外面import CoreMotion，並呼叫motionEnded的function，最後在裡面用一個判斷式來判斷動作類別，如果有達成上下晃動的動作時，變數就+1並且執行collectionView的reloadData去更新cell裡面所顯示的步數數字。
 
 #### 觸發時的顯示結果
 ![](https://github.com/qwer810520/FinalAssessment-CollectionViewSet/blob/master/CollectionViewSet/Assets.xcassets/2.imageset/2.PNG)
@@ -35,7 +35,7 @@
 ![](https://github.com/qwer810520/FinalAssessment-CollectionViewSet/blob/master/CollectionViewSet/Assets.xcassets/4.imageset/4.PNG)
 
 #### 參考資訊
-[打開設定](http://stackoverflow.com/questions/28152526/how-do-i-open-phone-settings-when-a-button-is-clicked-ios)
+[How do i open phone settings when a button is clicked ios](http://stackoverflow.com/questions/28152526/how-do-i-open-phone-settings-when-a-button-is-clicked-ios)
 
 ### 第五格
 * 在didSelectItemAt的function裡判斷，如果第五格被觸發時用canOpenURL去開啟GoogleMap app，另外用open方法將要搜尋以及導航的條件寫入網址裡面並且帶入googleMap裡面。
@@ -44,9 +44,9 @@
 ![](https://github.com/qwer810520/FinalAssessment-CollectionViewSet/blob/master/CollectionViewSet/Assets.xcassets/5.imageset/5.PNG)
 
 #### 參考資訊
-[打開GoogleMap App參考資訊](http://stackoverflow.com/questions/32039816/how-to-open-google-maps-to-show-route-using-swift)
+[How to open Google Maps to show route using Swift](http://stackoverflow.com/questions/32039816/how-to-open-google-maps-to-show-route-using-swift)
 
-[官方位置資訊設定參考](https://developers.google.com/maps/documentation/ios-sdk/urlscheme?hl=zh-tw)
+[Google地圖URL配置](https://developers.google.com/maps/documentation/ios-sdk/urlscheme?hl=zh-tw)
 
 ### 第六格
 1. 先在class外面import MessageUI，並且呼叫MFMailComposeViewControllerDelegate協定。
