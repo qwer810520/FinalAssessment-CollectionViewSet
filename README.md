@@ -18,7 +18,7 @@
 ![](https://github.com/qwer810520/FinalAssessment-CollectionViewSet/blob/master/CollectionViewSet/Assets.xcassets/2-1.imageset/2-1.PNG)
 
 ### 第三格
-1. 建立一個變數來儲存步數，接下來在cell裡面拉近一個Label元件來顯示要顯示的內容以及步數。
+1. 建立一個變數來儲存步數，接下來在cell裡面拉近一個Label元件並在cellForItemAt的function設定要顯示的內容以及步數。
 2. 接下來在class外面import CoreMotion，接下來呼叫motionEnded的function，最後在裡面用一個判斷式來判斷動作類別，如果有達成上下晃動的動作時，變數就+1並且執行collectionView的reloadData去更新cell裡面所顯示的步數數字。
 
 #### 觸發時的顯示結果
